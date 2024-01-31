@@ -10,32 +10,40 @@
         android:id="@+id/kon_pwd"
         android:layout_width="296dp"
         android:layout_height="51dp"
+        android:layout_marginTop="4dp"
         android:ems="10"
         android:hint="Konfirmasi Password"
         android:inputType="textPassword"
-        tools:layout_editor_absoluteX="58dp"
-        tools:layout_editor_absoluteY="525dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pwd" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="308dp"
-        android:layout_height="78dp"
+        android:layout_width="224dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="52dp"
         android:fontFamily="@font/akronim"
+        android:gravity="center"
         android:text="Registrasi Fildtrip"
-        android:textSize="50sp"
+        android:textSize="30sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="51dp"
-        tools:layout_editor_absoluteY="52dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/n_dpn"
         android:layout_width="296dp"
         android:layout_height="57dp"
+        android:layout_marginTop="72dp"
         android:ems="10"
         android:hint="Nama Depan"
         android:inputType="text"
-        tools:layout_editor_absoluteX="58dp"
-        tools:layout_editor_absoluteY="202dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
         android:id="@+id/n_blkng"
@@ -44,8 +52,9 @@
         android:ems="10"
         android:hint="Nama Belakang"
         android:inputType="text"
-        tools:layout_editor_absoluteX="57dp"
-        tools:layout_editor_absoluteY="259dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/n_dpn" />
 
     <EditText
         android:id="@+id/NIM"
@@ -54,8 +63,9 @@
         android:ems="10"
         android:hint="NIM"
         android:inputType="number"
-        tools:layout_editor_absoluteX="57dp"
-        tools:layout_editor_absoluteY="312dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/n_blkng" />
 
     <EditText
         android:id="@+id/thn_angkatan"
@@ -64,8 +74,9 @@
         android:ems="10"
         android:hint="Tahun Angkatan"
         android:inputType="number"
-        tools:layout_editor_absoluteX="57dp"
-        tools:layout_editor_absoluteY="364dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NIM" />
 
     <EditText
         android:id="@+id/no_mkn"
@@ -74,24 +85,29 @@
         android:ems="10"
         android:hint="Nomor Makan"
         android:inputType="number"
-        tools:layout_editor_absoluteX="57dp"
-        tools:layout_editor_absoluteY="415dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thn_angkatan" />
 
     <EditText
         android:id="@+id/pwd"
         android:layout_width="295dp"
         android:layout_height="53dp"
+        android:layout_marginTop="36dp"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
-        tools:layout_editor_absoluteX="57dp"
-        tools:layout_editor_absoluteY="472dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/no_mkn" />
 
     <Button
-        android:id="@+id/btn_regis"
+        android:id="@+id/btn_dft"
         android:layout_width="133dp"
         android:layout_height="58dp"
-        android:text="Button"
-        tools:layout_editor_absoluteX="139dp"
-        tools:layout_editor_absoluteY="606dp" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_marginTop="48dp"
+        android:text="KIRIM"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kon_pwd" />
+</androidx.constraintlayout.widget.ConstraintLayout>
