@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "418576045843",
+    "project_id": "fieldtrip-1fc64",
+    "storage_bucket": "fieldtrip-1fc64.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:418576045843:android:799bf8d9a8c5f54d15ace6",
+        "android_client_info": {
+          "package_name": "com.simbolon.aboutme"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8qQVdzvg6jJFze_8dGDVGmaY0NHbiTmI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

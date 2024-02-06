@@ -6,108 +6,134 @@
     android:layout_height="match_parent"
     tools:context=".registrasi">
 
-    <EditText
-        android:id="@+id/kon_pwd"
-        android:layout_width="296dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="4dp"
-        android:ems="10"
-        android:hint="Konfirmasi Password"
-        android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pwd" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="224dp"
-        android:layout_height="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
         android:fontFamily="@font/akronim"
         android:gravity="center"
-        android:text="Registrasi Fildtrip"
+        android:text="Registrasi Fieldtrip"
         android:textSize="30sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/n_dpn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/n_dpn"
-        android:layout_width="296dp"
-        android:layout_height="57dp"
-        android:layout_marginTop="72dp"
+        android:layout_width="295dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="24dp"
         android:ems="10"
         android:hint="Nama Depan"
         android:inputType="text"
+        android:paddingHorizontal="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@id/textView" />
 
     <EditText
         android:id="@+id/n_blkng"
-        android:layout_width="296dp"
-        android:layout_height="53dp"
+        android:layout_width="295dp"
+        android:layout_height="51dp"
+        android:paddingHorizontal="10dp"
         android:ems="10"
         android:hint="Nama Belakang"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/n_dpn" />
+        app:layout_constraintTop_toBottomOf="@id/n_dpn" />
 
     <EditText
         android:id="@+id/NIM"
         android:layout_width="295dp"
-        android:layout_height="52dp"
+        android:layout_height="51dp"
         android:ems="10"
         android:hint="NIM"
         android:inputType="number"
+        android:paddingHorizontal="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/n_blkng" />
+        app:layout_constraintTop_toBottomOf="@id/n_blkng" />
 
     <EditText
         android:id="@+id/thn_angkatan"
         android:layout_width="295dp"
         android:layout_height="51dp"
         android:ems="10"
+        android:paddingHorizontal="10dp"
         android:hint="Tahun Angkatan"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/NIM" />
+        app:layout_constraintTop_toBottomOf="@id/NIM" />
 
     <EditText
         android:id="@+id/no_mkn"
         android:layout_width="295dp"
-        android:layout_height="57dp"
+        android:layout_height="51dp"
         android:ems="10"
         android:hint="Nomor Makan"
+        android:paddingHorizontal="10dp"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/thn_angkatan" />
+        app:layout_constraintTop_toBottomOf="@id/thn_angkatan" />
 
-    <EditText
-        android:id="@+id/pwd"
-        android:layout_width="295dp"
-        android:layout_height="53dp"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dpn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
-        android:ems="10"
         android:hint="Password"
-        android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/no_mkn" />
+        app:layout_constraintTop_toBottomOf="@id/no_mkn"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/pwd"
+            android:layout_width="295dp"
+            android:layout_height="51dp"
+            android:layout_gravity="bottom"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/konfpwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:hint="Konfirmasi Password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dpn"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+
+            android:id="@+id/kon_pwd"
+            android:layout_width="295dp"
+            android:layout_height="67dp"
+            android:layout_gravity="bottom"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/btn_dft"
         android:layout_width="133dp"
         android:layout_height="58dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="80dp"
         android:text="KIRIM"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/kon_pwd" />
+        app:layout_constraintTop_toBottomOf="@id/konfpwd"
+        app:layout_constraintVertical_bias="0.0" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

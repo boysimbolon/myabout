@@ -1,0 +1,25 @@
+{
+  "user": [
+    {
+      "name": "John Doe",
+      "nim": "1234567890",
+      "tahun_angkatan": "2022",
+      "no_makanan": "123",
+      "pwd": "pwd1"
+    },
+    {
+      "name": "Jane Smith",
+      "nim": "0987654321",
+      "tahun_angkatan": "2023",
+      "no_makanan": "456",
+      "pwd": "pwd2"
+    },
+    {
+      "name": "Boy Full Simbolon",
+      "nim": "2281040",
+      "tahun_angkatan": "2022",
+      "no_makanan": "456",
+      "pwd": "mypwd1"
+    }
+  ]
+}
