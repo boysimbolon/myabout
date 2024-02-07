@@ -39,10 +39,10 @@
         android:id="@+id/n_blkng"
         android:layout_width="295dp"
         android:layout_height="51dp"
-        android:paddingHorizontal="10dp"
         android:ems="10"
         android:hint="Nama Belakang"
         android:inputType="text"
+        android:paddingHorizontal="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/n_dpn" />
@@ -64,9 +64,9 @@
         android:layout_width="295dp"
         android:layout_height="51dp"
         android:ems="10"
-        android:paddingHorizontal="10dp"
         android:hint="Tahun Angkatan"
         android:inputType="number"
+        android:paddingHorizontal="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/NIM" />
@@ -77,8 +77,8 @@
         android:layout_height="51dp"
         android:ems="10"
         android:hint="Nomor Makan"
-        android:paddingHorizontal="10dp"
         android:inputType="number"
+        android:paddingHorizontal="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/thn_angkatan" />
@@ -97,8 +97,8 @@
         <EditText
             android:id="@+id/pwd"
             android:layout_width="295dp"
-            android:layout_height="51dp"
-            android:layout_gravity="bottom"
+            android:layout_height="54dp"
+            android:gravity="bottom"
             android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -118,7 +118,7 @@
 
             android:id="@+id/kon_pwd"
             android:layout_width="295dp"
-            android:layout_height="67dp"
+            android:layout_height="54dp"
             android:layout_gravity="bottom"
             android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
